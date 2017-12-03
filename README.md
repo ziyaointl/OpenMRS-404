@@ -1,0 +1,2 @@
+This is a proposed 404 page for the OpenMRS reference application.
+Please note that the code for the navigation bar and the layout of this page is directly from the OpenMRS reference application, which is covered under MPL-2.0 license.
