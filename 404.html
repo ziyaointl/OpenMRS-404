@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>404</title>
         <link rel="shortcut icon" type="image/ico" href="https://demo.openmrs.org/openmrs/images/openmrs-favicon.ico"/>
         <link rel="icon" type="image/png\" href="https://demo.openmrs.org/openmrs/images/openmrs-favicon.png"/>
-        <!--font awesome-->
+        <!--Due to CORS policy, font awesome cannot be loaded from from openmrs.org-->
+        <!--This is just a temperary solution. When deploying, replace this whole head section with the dynamically generated one-->
         <script src="https://use.fontawesome.com/2e2bee7679.js"></script>
         <script type="text/javascript" src="https://demo.openmrs.org/openmrs/ms/uiframework/resource/uicommons/scripts/jquery-1.12.4.min.js?cache=1512270559888"></script>
         <script type="text/javascript" src="https://demo.openmrs.org/openmrs/ms/uiframework/resource/uicommons/scripts/jquery-ui-1.9.2.custom.min.js?cache=1512270559888"></script>
@@ -20,6 +21,8 @@
 
     </head>
     <body>
+        
+        <!--Replace this header with the dynamically generated one-->
         <header>
             <div class="logo">
                 <a href="https://demo.openmrs.org/openmrs/referenceapplication/home.page">
@@ -33,24 +36,20 @@
                     admin
                     
                     <i class="icon-caret-down appui-icon-caret-down link"></i><i class="icon-caret-up link appui-toggle" style="display: none;"></i>
-                        <ul id="user-account-menu" class="appui-toggle">
-                            
-                            <li>
-                                <a id="" href="https://demo.openmrs.org/openmrs/adminui/myaccount/myAccount.page">
-                                    My Account
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    
+                    <ul id="user-account-menu" class="appui-toggle">
+                        
+                        <li>
+                            <a id="" href="https://demo.openmrs.org/openmrs/adminui/myaccount/myAccount.page">
+                                My Account
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="change-location">
                     <a href="javascript:void(0);">
                         <i class="icon-map-marker small"></i>
                         <span id="selected-location" data-bind="text: text" location-uuid="58c57d25-8d39-41ab-8422-108a0c277d98"></span>
-                        
                             <i class="icon-caret-down link"></i>
-                        
                     </a>
                 </li>
                 <li class="logout">
@@ -66,22 +65,14 @@
                     <img src="https://demo.openmrs.org/openmrs/ms/uiframework/resource/uicommons/images/spinner.gif">
                 </div>
                 <ul class="select">
-                    
                     <li class="" locationUuid="b1a8b05e-3542-4037-bbd3-998ee9c40574" locationId="6" locationName="Inpatient Ward">Inpatient Ward</li>
-                    
                     <li class="" locationUuid="2131aff8-2e2a-480a-b7ab-4ac53250262b" locationId="4" locationName="Isolation Ward">Isolation Ward</li>
-                    
                     <li class="" locationUuid="7fdfa2cb-bc95-405a-88c6-32b7673c0453" locationId="3" locationName="Laboratory">Laboratory</li>
-                    
                     <li class="selected" locationUuid="58c57d25-8d39-41ab-8422-108a0c277d98" locationId="7" locationName="Outpatient Clinic">Outpatient Clinic</li>
-                    
                     <li class="" locationUuid="7f65d926-57d6-4402-ae10-a5b3bcbf7986" locationId="2" locationName="Pharmacy">Pharmacy</li>
-                    
                     <li class="" locationUuid="6351fcf4-e311-4a19-90f9-35667d99a8af" locationId="5" locationName="Registration Desk">Registration Desk</li>
-                    
                 </ul>
             </div>
-            
         </header>
         
         <div id="body-wrapper">
@@ -90,4 +81,4 @@
             <p>You can use the navigation bar above or go back to <a href="https://demo.openmrs.org/openmrs/referenceapplication/home.page">home</a>.</p>
         </div>
     </body>
-</html> 
+</html>
