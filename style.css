@@ -1,0 +1,10 @@
+.footnote {
+    padding-top: 30px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footnote > a{
+    color: #aaa;
+    text-decoration: underline;
+}
